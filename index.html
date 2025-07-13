@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Árvore Genealógica</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="arvore-container">
+    <img class="imagem-fundo" src="imagens/arvore.png" alt="Árvore Genealógica">
+
+    <!-- Matriarca no tronco -->
+    <div class="matriarca">
+      <img src="imagens/matriarca.jpg" alt="Matriarca">
+      <div class="nome">Ivandete</div>
+    </div>
+
+    <!-- Filhos dentro das folhas (com posição manual e popups) -->
+    <div class="filhos">
+      <div class="filho" style="top: 45%; left: 30%;" onclick="mostrarPopup(1)">
+        <img src="imagens/filho1.jpg" alt="Filho 1">
+      </div>
+      <div class="filho" style="top: 45%; left: 70%;" onclick="mostrarPopup(2)">
+        <img src="imagens/filho2.jpg" alt="Filho 2">
+      </div>
+      <div class="filho" style="top: 35%; left: 15%;" onclick="mostrarPopup(3)">
+        <img src="imagens/filho3.jpg" alt="Filho 3">
+      </div>
+      <div class="filho" style="top: 35%; left: 85%;" onclick="mostrarPopup(4)">
+        <img src="imagens/filho4.jpg" alt="Filho 4">
+      </div>
+      <div class="filho" style="top: 30%; left: 40%;" onclick="mostrarPopup(5)">
+        <img src="imagens/filho5.jpg" alt="Filho 5">
+      </div>
+      <div class="filho" style="top: 30%; left: 60%;" onclick="mostrarPopup(6)">
+        <img src="imagens/filho6.jpg" alt="Filho 6">
+      </div>
+      <div class="filho" style="top: 22%; left: 25%;" onclick="mostrarPopup(7)">
+        <img src="imagens/filho7.jpg" alt="Filho 7">
+      </div>
+      <div class="filho" style="top: 22%; left: 80%;" onclick="mostrarPopup(8)">
+        <img src="imagens/filho8.jpg" alt="Filho 8">
+      </div>
+      <div class="filho" style="top: 13%; left: 65%;" onclick="mostrarPopup(9)">
+        <img src="imagens/filho9.jpg" alt="Filho 9">
+      </div>
+      <div class="filho" style="top: 13%; left: 40%;" onclick="mostrarPopup(10)">
+        <img src="imagens/filho10.jpg" alt="Filho 10">
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="fechar" onclick="fecharPopup()">&times;</span>
+      <div id="conteudoPopup"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
